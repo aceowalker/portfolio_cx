@@ -30,6 +30,11 @@ export type Project = {
         type: "iframe";
         src: string;
         title: string;
+      }
+    | {
+        type: "lpGenerator";
+        src: string;
+        title: string;
       };
   link?: {
     href: string;
@@ -202,7 +207,7 @@ export const projects: Project[] = [
     summary:
       "商品情報を入力するだけで、コピーライティング、画像生成、LP構成生成までを自動化するAIツールです。",
     media: {
-      type: "iframe",
+      type: "lpGenerator",
       src: "https://lp-generator-rkatetxhs6qghvbffmqfgn.streamlit.app/",
       title: "AI搭載 LP自動生成ツール",
     },
