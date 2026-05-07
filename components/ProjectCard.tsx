@@ -38,13 +38,27 @@ function ProjectMedia({ project }: { project: Project }) {
   }
 
   return (
-    <iframe
-      title={project.media.title}
-      src={project.media.src}
-      loading="lazy"
-      className="h-[520px] w-full rounded-xl border-0 bg-white md:h-[640px]"
-      referrerPolicy="strict-origin-when-cross-origin"
-    />
+    <div className="overflow-hidden rounded-xl border border-white/10 bg-white">
+      <div className="flex flex-col gap-3 border-b border-slate-200 bg-slate-50 px-4 py-3 text-slate-700 sm:flex-row sm:items-center sm:justify-between">
+        <p className="text-sm font-semibold">{project.media.title}</p>
+        <a
+          href={project.media.src}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-bold text-sky-700 transition hover:text-sky-900"
+        >
+          外部で開く
+          <ExternalLink size={16} />
+        </a>
+      </div>
+      <iframe
+        title={project.media.title}
+        src={project.media.src}
+        loading="lazy"
+        className="h-[520px] w-full border-0 bg-white md:h-[640px]"
+        referrerPolicy="strict-origin-when-cross-origin"
+      />
+    </div>
   );
 }
 

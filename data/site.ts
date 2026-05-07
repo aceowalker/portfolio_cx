@@ -206,6 +206,10 @@ export const projects: Project[] = [
       src: "https://lp-generator-rkatetxhs6qghvbffmqfgn.streamlit.app/",
       title: "AI搭載 LP自動生成ツール",
     },
+    link: {
+      href: "https://lp-generator-rkatetxhs6qghvbffmqfgn.streamlit.app/",
+      label: "デモを開く",
+    },
     sections: [
       {
         label: "概要",
