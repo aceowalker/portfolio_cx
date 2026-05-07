@@ -1,0 +1,18 @@
+.next
+node_modules
+out
+dist
+.env*
+!.env.example
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vercel
+*.tsbuildinfo
+
+# Original asset copies kept outside the Next.js public path.
+/bakery_chatbot_screen.jpg
+/bakery_rag_video.mp4
+/openbadge.jpg
+/portfolio_profile.png
